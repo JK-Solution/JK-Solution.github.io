@@ -145,6 +145,183 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jk-solution.github.io/2023/02/28/%E7%9C%9F%E7%90%86%E4%B8%8E%E5%93%B2%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/28/%E7%9C%9F%E7%90%86%E4%B8%8E%E5%93%B2%E5%AD%A6/" class="post-title-link" itemprop="url">真理与哲学</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-28 21:46:18 / 修改时间：21:46:31" itemprop="dateCreated datePublished" datetime="2023-02-28T21:46:18+08:00">2023-02-28</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>人们什么都会忘记，但不会忘记自己。<br>人们所有的行为，都源于内心的原则和自己的性格，性格是无从改变的，情景相同总是会做同样的事。<br>宽恕别人意味着将高价买来的经验扔掉。<br>学习哲学的目的是什么。<br>为了认识自己，认识他人，认识这个由人组成的社会。<br>找到人生的出发点，找到理想的方向。<br>人性难测，哲学是一门度量人性的学问。<br>与度量世界的学问-科学不同，哲学不会有明确的答案，<br>时间流逝，社会制度在变，社会中人的思想在变，哲学也在变，不变的是哲学方向 探索什么是真理，什么是善，什么是恶，什么是正义，什么是邪恶，虽然可能永远不会有答案，但我们仍在探索。<br>苏格拉底有个奇妙的比喻 在一个洞穴中有一处光亮，我们双手双脚被固定住，一生只能看向墙壁，在我们看来，世界是墙壁上的影子世界，真理就是光源，我们在影子世界苦苦寻找真理，穷尽一生也找不到。脱离开当前的视线，扯掉绳子，转头去看。才能知道真理是什么。 即使发现了真理，影子世界也根本不能理解。<br>探寻真理的过程，就是哲学存在的意义。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jk-solution.github.io/2023/02/27/%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%96%B9%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/27/%E5%BC%80%E5%8F%91%E4%B8%AD%E7%9A%84%E5%BB%BA%E6%A8%A1%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">DDD的建模方式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-27 22:00:00 / 修改时间：22:00:53" itemprop="dateCreated datePublished" datetime="2023-02-27T22:00:00+08:00">2023-02-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>后端开发者对于需求的建模方式一般有两种<br>第一种先把数据库设计好，使用orm框架，封装好inf层，填写业务逻辑，暴露一个接口完成本次需求。<br>这种传统的建模方式容易受到开发者水平，需求提出时考虑的完善程度的影响。<br>另一种是先拉着业务讨论出所有的场景，根据场景提炼出所需接口，定义好交互pojo，然后完成领域对象（domain）的构建，然后完成持久化的能力。<br>ddd推崇的建模方式是后者，domain的构建是重中之重，把控好边界，对于domain的操作应该谨慎，domian构建完成后除非遇到需求缺陷几乎不用修改。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jk-solution.github.io/2023/02/27/ddd%E4%B8%AD%E9%97%A8%E9%9D%A2%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/02/27/ddd%E4%B8%AD%E9%97%A8%E9%9D%A2%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/" class="post-title-link" itemprop="url">DDD中门面的设计原则</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-02-27 22:00:00 / 修改时间：22:02:57" itemprop="dateCreated datePublished" datetime="2023-02-27T22:00:00+08:00">2023-02-27</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>ddd强调的是业务有限，为业务的入口抽象出了领域门面层。application service<br>这一层抽象用来处理当前领域中的不同需求，遵循一个简单的原则： 一个业务操作对应applicarionservice的一个业务方法。<br>每一个业务方法构成了独立的事物边界。<br>本身不包含业务逻辑的实现，业务逻辑的实现放在聚合根（domain）中，applicationService应该是很薄的一层，本身相当于代理调用domian的方法。<br>与ui和通信协议无关<br><img src="https://cdn.nlark.com/yuque/0/2023/png/12913264/1677406140435-f61115ca-9fb3-47e8-86dc-b7a74d70f9c2.png#averageHue=%23d4d576&from=url&id=JDQE2&name=album_temp_1677406128.png&originHeight=1181&originWidth=1280&originalType=binary&ratio=1&rotation=0&showTitle=false&size=351466&status=done&style=none&title=" alt="album_temp_1677406128.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://jk-solution.github.io/2023/02/21/%E6%8A%98%E5%8F%A0%E5%BA%8A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,7 +571,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
